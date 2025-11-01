@@ -11,6 +11,10 @@
     "message": "全てのサイト",
     "description": "Popup option text for exporting all cookies"
   },
+  "popupSitesAllClipboard": {
+    "message": "ALL (copy to clipboard)",
+    "description": "Popup option text for exporting all cookies to the clipboard"
+  },
   "popupSitesCurrent": {
     "message": "現在のサイト",
     "description": "Popup option text for exporting cookies only from the current site"
