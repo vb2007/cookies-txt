@@ -12,6 +12,8 @@ async function download(filename, blob) {
 async function onMessage(message, sender, sendResponse) {
   if (message.message == "Download") {
     download(message.filename, message.blob);
+  } else if (message.message == "Clipboard") {
+    await navigator.clipboard.writeText(message.text);
   }
 }
 
