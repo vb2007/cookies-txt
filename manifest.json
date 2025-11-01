@@ -53,6 +53,7 @@
     "downloads",
     "contextualIdentities",
     "<all_urls>",
-    "tabs"
+    "tabs",
+    "clipboardWrite"
   ]
 }
