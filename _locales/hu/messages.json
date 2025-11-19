@@ -7,6 +7,14 @@
     "message": "Sütik exportálása",
     "description": "Tooltip of the browser toolbar icon."
   },
+  "copyBtn": {
+    "message": "Másolás",
+    "description": "Copy button that appears next to all titles listed below"
+  },
+  "downloadBtn": {
+    "message": "Letöltés",
+    "description": "Download button that appears next to all titles listed below"
+  },
   "popupSitesAll": {
     "message": "Összes",
     "description": "Popup option text for exporting all cookies"
