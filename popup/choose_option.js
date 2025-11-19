@@ -29,3 +29,6 @@ document.querySelector("#all .copy").addEventListener("click", () => {
   browser.runtime.sendMessage({ clipboard: true });
   window.close();
 });
+document.querySelector("#current .copy").addEventListener("click", () => queryWithCurrentTab((tab) => ({ url: tab.url })));
+document.querySelector("#container-all .copy").addEventListener("click", () => queryWithCurrentTab((tab) => ({ cookieStoreId: tab.cookieStoreId })));
+document.querySelector("#container-current .copy").addEventListener("click", () => queryWithCurrentTab((tab) => ({ url: tab.url, cookieStoreId: tab.cookieStoreId })));
