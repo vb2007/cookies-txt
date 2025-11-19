@@ -7,6 +7,14 @@
     "message": "Экспортировать куки",
     "description": "Tooltip of the browser toolbar icon."
   },
+  "copyBtn": {
+    "message": "Copy",
+    "description": "Copy button that appears next to all titles listed below"
+  },
+  "downloadBtn": {
+    "message": "Download",
+    "description": "Download button that appears next to all titles listed below"
+  },
   "popupSitesAll": {
     "message": "ВСЕ",
     "description": "Popup option text for exporting all cookies"
