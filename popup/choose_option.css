@@ -8,12 +8,11 @@
 
 .option-text {
     flex: 1;
-    border: none;
+    margin: 0;
     padding: 0;
-    background: none;
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.75em;
-    cursor: pointer;
 }
 
 .action-buttons {
