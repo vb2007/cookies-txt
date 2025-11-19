@@ -15,14 +15,14 @@ queryWithCurrentTab = (tabToMsgFn) => {
   window.close();
 };
 
-document.querySelector(".all").addEventListener("click", () => {
+document.querySelector("#all download").addEventListener("click", () => {
   browser.runtime.sendMessage({});
   window.close();
 });
-document.querySelector(".all-clipboard").addEventListener("click", () => {
+document.querySelector("#all-clipboard download").addEventListener("click", () => {
   browser.runtime.sendMessage({ clipboard: true });
   window.close();
 });
-document.querySelector(".current").addEventListener("click", () => queryWithCurrentTab((tab) => ({ url: tab.url })));
-document.querySelector(".container-all").addEventListener("click", () => queryWithCurrentTab((tab) => ({ cookieStoreId: tab.cookieStoreId })));
-document.querySelector(".container-current").addEventListener("click", () => queryWithCurrentTab((tab) => ({ url: tab.url, cookieStoreId: tab.cookieStoreId })));
+document.querySelector("#current download").addEventListener("click", () => queryWithCurrentTab((tab) => ({ url: tab.url })));
+document.querySelector("#container-all download").addEventListener("click", () => queryWithCurrentTab((tab) => ({ cookieStoreId: tab.cookieStoreId })));
+document.querySelector("#container-current download").addEventListener("click", () => queryWithCurrentTab((tab) => ({ url: tab.url, cookieStoreId: tab.cookieStoreId })));
