@@ -15,14 +15,17 @@ queryWithCurrentTab = (tabToMsgFn) => {
   window.close();
 };
 
+//download buttons
 document.querySelector("#all .download").addEventListener("click", () => {
   browser.runtime.sendMessage({});
-  window.close();
-});
-document.querySelector("#all-clipboard .download").addEventListener("click", () => {
-  browser.runtime.sendMessage({ clipboard: true });
   window.close();
 });
 document.querySelector("#current .download").addEventListener("click", () => queryWithCurrentTab((tab) => ({ url: tab.url })));
 document.querySelector("#container-all .download").addEventListener("click", () => queryWithCurrentTab((tab) => ({ cookieStoreId: tab.cookieStoreId })));
 document.querySelector("#container-current .download").addEventListener("click", () => queryWithCurrentTab((tab) => ({ url: tab.url, cookieStoreId: tab.cookieStoreId })));
+
+//copy buttons
+document.querySelector("#all .copy").addEventListener("click", () => {
+  browser.runtime.sendMessage({ clipboard: true });
+  window.close();
+});
